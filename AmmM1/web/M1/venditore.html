@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matteo Porcu">
+        <meta name="description" content="Pagina del venditore">
+        <meta name="keywords" content="venditore, inserimento">
+    </head>
+    <body>
+        <h1>Pagina venditore</h1>
+        
+        <form method="POST">
+            <!-- Nome e imagine dell'oggetto -->
+            <div>
+                <label for="nomeOggetto">Nome oggetto</label>
+                <input type="text" name="nomeOggetto" id="nomeOggetto" />
+                <label for="urlImmagine">Url immagine</label>
+                <input type="url" name="urlImmagine" id="urlImmagine" />
+            </div>
+
+            <!-- Descrizione oggetto -->
+            <div>
+                <label for="descrizione">Descrizione</label>
+                <textarea name="descrizione" id="descrizione"
+                          rows="4" cols="20">Descrizione oggetto</textarea>
+            </div>
+            
+            <!-- Prezzo e quantità dell'oggetto -->
+            <div>
+                <label for="prezzo">Prezzo in euro</label>
+                <input type="number" name="prezzo" id="prezzo" />
+                <label for="quantitaOggetto">Quantit&aacute; oggetto</label>
+                <input type="number" name="quantitaOggetto" id="quantitaOggetto" />
+            </div>
+
+            <!-- Submit e reset -->
+            <div>
+                <input type="submit" value="Invia"/>
+                <input type="reset" value="Reimposta"/>
+            </div>
+        </form>
+        
+        <div>
+            <h2>Navigazione</h2>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
