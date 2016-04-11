@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Venditore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Matteo Porcu">
+        <meta name="description" content="Pagina del venditore">
+        <meta name="keywords" content="venditore, inserimento">
+        <link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Cataplasma Shop</h1>
+        </div>
+        
+        <div id="content">
+            <h2>Pagina venditore</h2>
+
+            <form method="POST">
+                <!-- Nome e imagine dell'oggetto -->
+                <div>
+                    <label for="nomeOggetto">Nome oggetto</label>
+                    <input type="text" name="nomeOggetto" id="nomeOggetto" />
+                    <label for="urlImmagine">Url immagine</label>
+                    <input type="url" name="urlImmagine" id="urlImmagine" />
+                </div>
+
+                <!-- Descrizione oggetto -->
+                <div>
+                    <label for="descrizione">Descrizione</label>
+                    <textarea name="descrizione" id="descrizione"
+                              rows="4" cols="20">Descrizione oggetto</textarea>
+                </div>
+
+                <!-- Prezzo e quantità dell'oggetto -->
+                <div>
+                    <label for="prezzo">Prezzo in euro</label>
+                    <input type="number" name="prezzo" id="prezzo" />
+                    <label for="quantitaOggetto">Quantit&aacute; oggetto</label>
+                    <input type="number" name="quantitaOggetto" id="quantitaOggetto" />
+                </div>
+
+                <!-- Submit e reset -->
+                <div>
+                    <input type="submit" value="Invia"/>
+                    <input type="reset" value="Reimposta"/>
+                </div>
+            </form>
+        </div>
+        
+        <div id="navigazione">
+            <h2>Navigazione</h2>
+            <ul>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        
+        <div id="barraDestra">
+            <h2>Testo riempitivo</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </body>
+</html>
