@@ -1,0 +1,6 @@
+Nome    Password
+Vend1      0
+Vend2      0
+Vend3 	   0
+Cli1       0
+Cli2       0
