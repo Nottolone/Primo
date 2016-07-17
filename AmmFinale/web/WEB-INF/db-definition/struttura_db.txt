@@ -1,0 +1,27 @@
+Entità
+
+Venditore
+-int id
+-String username
+-String password
+-String saldo
+
+Cliente
+-int id
+-String username
+-String password
+-String saldo
+
+Prodotto
+-int id
+-String nome
+-String url_immagine
+-String descrizione
+-int prezzo
+-int quantita
+
+
+Relazioni
+
+Venditore - Prodotto
+   uno    -   molti

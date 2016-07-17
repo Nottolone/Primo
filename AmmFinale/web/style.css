@@ -1,0 +1,198 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9-apr-2016, 17.05.51
+    Author     : Matteo
+*/
+
+/*
+  - Colore di sfondo
+  - Colore e font per il testo 
+*/
+body{
+    background-color: #f7f7f7;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+/* Proprietà dei titoli (header) */
+h1{
+    color: white;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+/* Proprietà dei titoli (h2 e h3) */
+h2, h3{
+    color: #9197a3;
+}
+
+/* Proprietà dei link */
+a:link{
+    color: #3b5998;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited{
+    color: #6e5998;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Tabelle */
+
+/* Stile per le intestazioni */
+th{
+    background-color: #dfe0e4;
+}
+
+/*Stile per le celle*/
+tr{
+    background-color: white;
+}
+tr.pari{ /* Le righe pari sono di colore diverso */
+    background-color: #fafafa;
+}
+
+/* Dimensioni delle celle */
+td{
+    width: 280px;
+    height: 45px;
+}
+td.immagine{
+    width: 280px;
+    height: 200px;
+}
+
+/* - Fare in modo che le label ed i campi di input siano allineati.
+   - Impostare bordi e colori per i campi di input, in particolare per il focus 
+*/
+label{
+    float: left;
+    width: 130px;
+}
+
+input[type=text], input[type=password], input[type=url], input[type=number]{
+    display: block;
+    background-color: #f7f7f7;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    margin-bottom: 5px;
+    width: 140px;
+}
+
+input:focus{
+    background-color: white;
+}
+
+textarea{
+    display: block;
+    background-color: #f7f7f7;
+    border-width: 1px;
+    border-color: black;
+    margin-bottom: 5px;
+    width: 140px;
+}
+
+textarea:focus{
+    background-color: white;
+}
+
+/* Posizione e grafica dei pulsanti per submit e reset */
+input[type=submit], input[type=reset]{
+    display: inline;
+    border-width: 0px;
+    background-color: #3b5998;
+    color: white;
+    width: 70px;
+}
+
+input[type=submit]{
+    margin-left: 100px;
+}
+
+/* Proprietà dell'header */
+#header{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: #3b5998;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+/* Proprietà fisse del content (che non cambiano con le dimensioni della pagina) */
+#content{
+    margin-top: 70px;
+}
+
+/* Proprietà per il layout responsive */
+@media only screen and (min-width: 1024px) {
+    #content{
+        margin-left: 20%;
+        margin-right: 15%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #navigazione{
+        position: absolute;
+        top: 55px;
+        left: 5px;
+        width: 20%;
+        height: 100%;
+        padding-left: 10px;
+        background-color: white;
+    }
+    
+    #barraDestra{
+        position: absolute;
+        top: 55px;
+        right: 5px;
+        width: 15%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px){
+    #content{
+        margin-left: 30%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    #navigazione{
+        position: absolute;
+        top: 55px;
+        left: 5px;
+        width: 30%;/* Le dimensioni maggiori in proporzione sono volute */
+        height: 100%;
+        padding-left: 10px;
+        background-color: white;
+    }
+    
+    #barraDestra{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #navigazione{
+        display: none;
+    }
+    
+    #barraDestra{
+        display: none;
+    }
+}
